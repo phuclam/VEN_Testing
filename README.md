@@ -1,3 +1,5 @@
+Framework Laravel 6.14
+
 # Set up project
 
 To set up this project, after cloned this repository please do following these steps in below:
