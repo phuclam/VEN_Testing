@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::Auth();
+Route::middleware('auth')->group(function () {
+    Route::get('/', 'Web\OrderController@index');
+    Route::get('/order/{id}/detail', 'Web\OrderController@show')->name('orderDetail');
 });
